@@ -1,0 +1,18 @@
+name: Issue generica
+description: Segnalazione o richiesta generica
+title: "[Issue]: "
+projects: ["WeTechnology-AI/5"]
+labels: []
+body:
+  - type: textarea
+    id: descrizione
+    attributes:
+      label: Descrizione
+      description: Cosa serve o cosa non funziona?
+    validations:
+      required: true
+  - type: textarea
+    id: contesto
+    attributes:
+      label: Contesto
+      description: Link, screenshot, riferimenti utili
