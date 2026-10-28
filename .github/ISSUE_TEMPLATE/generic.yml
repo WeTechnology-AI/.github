@@ -16,3 +16,8 @@ body:
     attributes:
       label: Contesto
       description: Link, screenshot, riferimenti utili
+  - type: input
+    id: giorni
+    attributes:
+      label: Stima (giorni)
+      description: Solo per i task di sviluppo, facoltativa. Giorni lavorativi che servono, anche mezze giornate (es. 3 o 0,5). È la stessa stima del campo Giorni della board del progetto, e si può aggiungere dopo.
