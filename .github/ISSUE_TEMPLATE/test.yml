@@ -1,0 +1,36 @@
+name: Task di test
+description: Un criterio di accettazione di una user story, da verificare quando lo sviluppo è terminato.
+title: "[TEST] [ID requisito] "
+type: Test
+projects: ["WeTechnology-AI/5"]
+labels: ["test"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Il titolo è il criterio di accettazione, breve e verificabile, con `[TEST]` e l'ID del requisito della user story: per esempio `[TEST] [PRA-3] La corsa è assegnata entro 30 minuti`.
+        Dopo averlo creato, collegalo come sub-issue della user story e mettilo sulla board del progetto con lo stesso Sprint.
+  - type: textarea
+    id: requisito
+    attributes:
+      label: Requisito
+      description: L'ID del requisito della user story con il link a 2 - Requisiti.md, la descrizione e il criterio di verifica.
+    validations:
+      required: true
+  - type: textarea
+    id: task-sviluppo
+    attributes:
+      label: Task di sviluppo
+      description: Il task di sviluppo di cui il test verifica il lavoro, se il criterio è suo.
+  - type: textarea
+    id: verifica
+    attributes:
+      label: Cosa si verifica e come
+      description: I passi e il risultato atteso. Il test parte solo quando lo sviluppo è terminato.
+    validations:
+      required: true
+  - type: input
+    id: esecutore
+    attributes:
+      label: Chi lo esegue
+      description: Se il test è delegato, chi usa il lavoro, mai chi lo produce.
